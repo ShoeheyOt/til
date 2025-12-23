@@ -68,4 +68,22 @@ so in order to avoid it, it is better to use more precise names like (club_i, me
 
 `if(clubs[ci].members[mi] == users[ui]) /// now bug fixed`
 
-### Prefer Concrete Names over Abstract Names
+### Attaching Extra Information to a Name
+
+#### if there is a important information about variables that readers must know, it's worth attaching word to variable name.
+
+for example
+
+`const id = "af84ef845ca3`
+
+you might want to add information that the variable id above is hex code so they would understand what kind of information is stored instantly.
+
+`const hex_id = "af84ef845ca3"`
+
+### Values with Units
+
+#### Same idea as above, you want to add unit to variable so that readers would not get confused.
+
+`const size = 5 ///It is easy to misunderstand it can be length, byte and so on`
+
+`const size_mb = 5 /// now it is obvious`
