@@ -37,12 +37,35 @@ but the below case is totally fine as the tmp is literally temporal storage.
 ```javascript
 
 if (a > b) {
- let tmp = a;
- a = b;
- b = tmp;
+    let tmp = a;
+    a = b;
+    b = tmp;
 }
 
 ```
 #### The tmp should be used only in cases when being short-lived and temporary is the most important fact about that variable.
 
 ### Loop Iterators
+- i, j, k for indicator is ok, but make sure it is easy to trace.
+
+```javascript
+for (let i = 0; i < clubs.size; i++){
+    for (let j = 0; j < clubs[i].members.size(); j++){
+        for (let k = 0; k < users.size(); k++){
+            if ( clubs[i].members[k] == users[j])
+            console.log(`user ${users[j]} is in club ${clubs[i]}`);
+        }
+    }
+}
+```
+the example above doesn't work as k and j indicators in if statement are reversed and it is not easy to find the bug until you run the codes.
+
+`if(clubs[i].members[k] == users[j])`
+
+so in order to avoid it, it is better to use more precise names like (club_i, members_i, users_i) or (ci, mi, ui) for short.
+
+`if(clubs[ci].members[ui] == users[mi]) /// easy to find a bug`
+
+`if(clubs[ci].members[mi] == users[ui]) /// now bug fixed`
+
+### Prefer Concrete Names over Abstract Names
