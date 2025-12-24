@@ -17,7 +17,7 @@ as you see example above, if you want to get page from internet, the word "get" 
 ### Finding More "Colorful" Words
 - use thesaurus or ask someone to find a proper words 
     
-    *thesaurus is a dictionary to find synonyms
+    thesaurus is a dictionary to find synonyms
 
 the below is example of word list
 
@@ -87,3 +87,13 @@ you might want to add information that the variable id above is hex code so they
 `const size = 5 ///It is easy to misunderstand it can be length, byte and so on`
 
 `const size_mb = 5 /// now it is obvious`
+
+### Encoding Other Important Attributes
+
+sometime you want to add extra information into variables.
+
+ `unsafeInput /// not yet safe user input`
+ 
+ `safeInput /// after checking user input`
+
+#### But be careful adding these attrubutes might be redundant. use these when it is easy to be misunderstood.
