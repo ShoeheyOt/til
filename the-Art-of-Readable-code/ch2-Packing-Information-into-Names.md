@@ -96,4 +96,13 @@ sometime you want to add extra information into variables.
  
  `safeInput /// after checking user input`
 
-#### But be careful adding these attrubutes might be redundant. use these when it is easy to be misunderstood.
+#### But be careful adding these attrubutes might be redundant. use them when it is easy to be misunderstood.
+
+## How Long Should a Name Be?
+
+The longer name is harder to remember and need more space, so you can use short (or even a single letter) name as a variable.
+This is trade off.
+
+### Shorter Name Are Okey for Shorter Scope
+Identifiers or functions that have a smal scope don't need to carry as much information. This is the timing you can use and name a shorter variable. The point is how many other lines you need to use this variable.
+
