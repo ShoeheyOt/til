@@ -106,3 +106,7 @@ This is trade off.
 ### Shorter Name Are Okey for Shorter Scope
 Identifiers or functions that have a smal scope don't need to carry as much information. This is the timing you can use and name a shorter variable. The point is how many other lines you need to use this variable.
 
+### Acronyms and Abbreviations
+
+#### The most important rule here is "Would a new teammate understand what the name means?"
+project-specific abbreviations are usualy a bad idea. They are unfamiliar to the people outside of the project, and need more time for new member to understand the codes.
