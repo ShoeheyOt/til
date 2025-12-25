@@ -124,5 +124,13 @@ It is not always right to pack the all information as it might to be too many wo
 | MACRO_NAME         | #define macros         |
 | endWithUnderscore_ | class members variables|
 
+It is better to follow the convention which has information like above.
+
+Also there is a language specific convention. The below is javascript ones.
 
 
+`const x = new DatePicker();  //DatePicker() is a "constructor" function`
+
+`const y = pageHeight(); //pageHeight() is an ordinary function`
+
+`const $all_images = $("img") //$all_images is a jQuery object`
