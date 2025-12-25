@@ -110,3 +110,19 @@ Identifiers or functions that have a smal scope don't need to carry as much info
 
 #### The most important rule here is "Would a new teammate understand what the name means?"
 project-specific abbreviations are usualy a bad idea. They are unfamiliar to the people outside of the project, and need more time for new member to understand the codes.
+
+### Throwing Out Unneeded Words
+
+It is not always right to pack the all information as it might to be too many words. For example, `convertToString()` can be `toString()`. It doesn't change the meaning at all.
+
+### Use Name Formatting to Convey Meaning
+| Format             | Name                   |
+|--------------------|------------------------|
+| CamelCase          | class                  |
+| lower_separated    | variables              |
+| kConstantName      | constant variables     |
+| MACRO_NAME         | #define macros         |
+| endWithUnderscore_ | class members variables|
+
+
+
