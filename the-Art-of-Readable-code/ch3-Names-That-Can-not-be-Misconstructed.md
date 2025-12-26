@@ -13,13 +13,22 @@ Same idea, the word `stop` is misleading word, it can be whether "up to" or "up 
 
 when variables come to boolean, it should be clear as well.
 
-`const readPassword = true;`
+```
+const readPassword = true;
+
+```
 
 This example is dangerous because it can be whether "We need to read a password" or "The password has already been read".This case, you should not use the word "read", you can name it as `needPassword` or `isAuthenticated` instead.
 For boolean variable, you can use `is`, `has`, `can` or `should` in order to make the variable clear.
 
-Finally, it is better to avoid using negated terms in name. For example, `const isUnauthenticated = false;` you should use `const isAuthenticated = true;` for readability.
+Finally, it is better to avoid using negated terms in name for readability.
 
+```
+const isUnauthenticated = false; /// bad example
+
+const isAuthenticated = true;    /// good example
+
+```
 ### Matching Expectation of Users
 
 Beware of users' expectations about certain words. For example, users may expect `get()` or `size()` to be lightweight methods.
